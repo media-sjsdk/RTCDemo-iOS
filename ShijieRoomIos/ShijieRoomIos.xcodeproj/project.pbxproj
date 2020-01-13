@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D46CC1823C5E8D100B8F7E3 /* SJSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CCD9B23C5E2B6009060A8 /* SJSDK.framework */; };
+		0D46CC1923C5E8D100B8F7E3 /* SJSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CCD9B23C5E2B6009060A8 /* SJSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14041765224DF88500085A78 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14041764224DF88400085A78 /* VideoView.xib */; };
+		143D43EA224A30BC002FFD53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143D43E9224A30BC002FFD53 /* CoreMotion.framework */; };
+		490F50CC1AE255A3001F3FD5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F25F121AE12FAF005B9961 /* CoreTelephony.framework */; };
+		4936E7E21AE0EC250030088A /* cameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FDC4831AE0966B00E5CD63 /* cameraIcon.png */; };
+		4936E7E41AE0EC300030088A /* CameraSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49FDC4841AE0966B00E5CD63 /* CameraSettings.xib */; };
+		4947C96B1ADE310200DBFBC6 /* LoginViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49C4FE111AB8622400E54A0E /* LoginViewController.mm */; };
+		4947C96C1ADE310200DBFBC6 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49C4FE151AB8626700E54A0E /* main.mm */; };
+		4947C96D1ADE310200DBFBC6 /* RoomManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 493A30A81AB98973002D35F3 /* RoomManager.mm */; };
+		4947C96F1ADE310200DBFBC6 /* PhoneActionBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49CBDAF41AD3B309001200D8 /* PhoneActionBar.mm */; };
+		4947C9701ADE310200DBFBC6 /* TuningWindowViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4966070E1ACB979C0097701C /* TuningWindowViewController.mm */; };
+		4947C9711ADE310200DBFBC6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49C4FE0F1AB8622400E54A0E /* AppDelegate.mm */; };
+		4947C9721ADE310200DBFBC6 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4976E3AC1AD4DC5B004DB50E /* BaseNavigationViewController.m */; };
+		4947C9731ADE310200DBFBC6 /* ScreenInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49AC7DE71AD4C01400E8F1BC /* ScreenInfo.mm */; };
+		4947C9741ADE310200DBFBC6 /* GCDMulticastDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 495E141D1AC91D0300D39292 /* GCDMulticastDelegate.mm */; };
+		4947C9751ADE310200DBFBC6 /* VideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1E4DA531AC94008001180FD /* VideoViewController.mm */; };
+		4947C9791ADE310200DBFBC6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E4D9F21AC92081001180FD /* CFNetwork.framework */; };
+		4947C97A1ADE310200DBFBC6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E4D9F01AC92043001180FD /* QuartzCore.framework */; };
+		4947C97B1ADE310200DBFBC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E4D9ED1AC91F7E001180FD /* UIKit.framework */; };
+		4947C97C1ADE310200DBFBC6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E4D9EB1AC91F0D001180FD /* OpenGLES.framework */; };
+		4947C97D1ADE310200DBFBC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE13E81AB9064D00B8AD59 /* AVFoundation.framework */; };
+		4947C97E1ADE310200DBFBC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE13E61AB9063E00B8AD59 /* AudioToolbox.framework */; };
+		4947C97F1ADE310200DBFBC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE13E41AB9062F00B8AD59 /* SystemConfiguration.framework */; };
+		4947C9801ADE310200DBFBC6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE13E21AB9062100B8AD59 /* CoreVideo.framework */; };
+		4947C9811ADE310200DBFBC6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE13E01AB9061800B8AD59 /* CoreMedia.framework */; };
+		4947C9841ADE310200DBFBC6 /* PhoneActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CBDAF71AD3B998001200D8 /* PhoneActionBar.xib */; };
+		4947C9851ADE310200DBFBC6 /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C4FE1A1AB863AE00E54A0E /* LoginWindow.xib */; };
+		4947C9861ADE310200DBFBC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4935BDB71AB993ED0070CF3F /* Images.xcassets */; };
+		4947C9871ADE310200DBFBC6 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 49C4FE0A1AB8605700E54A0E /* MainMenu.nib */; };
+		4947C98A1ADE310200DBFBC6 /* TuningWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4966070A1ACB939E0097701C /* TuningWindow.xib */; };
+		4947C98B1ADE310200DBFBC6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C4FE1B1AB863AE00E54A0E /* MainWindow.xib */; };
+		4947C98C1ADE310200DBFBC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49C4FE081AB8605700E54A0E /* InfoPlist.strings */; };
+		4947C98F1ADE310200DBFBC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C4FE191AB863AE00E54A0E /* Default-568h@2x.png */; };
+		49D525301ADEADE900AC0301 /* bigmax.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D5252F1ADEADE900AC0301 /* bigmax.png */; };
+		49FDC48B1AE0A6FA00E5CD63 /* CameraSettingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49FDC4861AE0966B00E5CD63 /* CameraSettingsViewController.mm */; };
+		7AB63DBB22C8526F007FFBD7 /* XDSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB63DBA22C8526F007FFBD7 /* XDSDropDownMenu.m */; };
+		8C1801001B28829300A663C4 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1800FF1B28829300A663C4 /* libz.1.2.5.dylib */; };
+		B01359CF22E6FF160021864B /* drop_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B01359CC22E6FF160021864B /* drop_down.png */; };
+		B05DDD4E22F048F2005969BC /* LoginWindowIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05DDD4D22F048F2005969BC /* LoginWindowIpad.xib */; };
+		C1CA56CC1AFB55AA00EBC16A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CA56CB1AFB55AA00EBC16A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D46CC1A23C5E8D100B8F7E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0D46CC1923C5E8D100B8F7E3 /* SJSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D5CCD9B23C5E2B6009060A8 /* SJSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SJSDK.framework; sourceTree = "<group>"; };
+		0D6CD3611B2C08FF005EF9D6 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = SOURCE_ROOT; };
+		0D993BB31BFC634E006BAADA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		14041764224DF88400085A78 /* VideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = SOURCE_ROOT; };
+		143D43E9224A30BC002FFD53 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4935BDB71AB993ED0070CF3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		493A30A71AB98973002D35F3 /* ConferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceManager.h; sourceTree = SOURCE_ROOT; };
+		493A30A81AB98973002D35F3 /* RoomManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomManager.mm; sourceTree = SOURCE_ROOT; };
+		4947C9931ADE310200DBFBC6 /* ShijieRoomIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShijieRoomIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495E141C1AC91D0300D39292 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = SOURCE_ROOT; };
+		495E141D1AC91D0300D39292 /* GCDMulticastDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.mm; sourceTree = SOURCE_ROOT; };
+		4966070A1ACB939E0097701C /* TuningWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TuningWindow.xib; sourceTree = SOURCE_ROOT; };
+		4966070D1ACB979C0097701C /* TuningWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuningWindowViewController.h; sourceTree = SOURCE_ROOT; };
+		4966070E1ACB979C0097701C /* TuningWindowViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TuningWindowViewController.mm; sourceTree = SOURCE_ROOT; };
+		4976E3AB1AD4DC5B004DB50E /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = SOURCE_ROOT; };
+		4976E3AC1AD4DC5B004DB50E /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = SOURCE_ROOT; };
+		49AC7DE61AD4C01400E8F1BC /* ScreenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenInfo.h; sourceTree = SOURCE_ROOT; };
+		49AC7DE71AD4C01400E8F1BC /* ScreenInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScreenInfo.mm; sourceTree = SOURCE_ROOT; };
+		49BE13E01AB9061800B8AD59 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		49BE13E21AB9062100B8AD59 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		49BE13E41AB9062F00B8AD59 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49BE13E61AB9063E00B8AD59 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49BE13E81AB9064D00B8AD59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		49C099BC1ABBC5B100E7B932 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		49C099BF1ABBC5C100E7B932 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		49C4FE091AB8605700E54A0E /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		49C4FE0B1AB8605700E54A0E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MainMenu.nib; sourceTree = "<group>"; };
+		49C4FE0E1AB8622400E54A0E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		49C4FE0F1AB8622400E54A0E /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = SOURCE_ROOT; };
+		49C4FE101AB8622400E54A0E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = SOURCE_ROOT; };
+		49C4FE111AB8622400E54A0E /* LoginViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LoginViewController.mm; sourceTree = SOURCE_ROOT; };
+		49C4FE151AB8626700E54A0E /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = SOURCE_ROOT; };
+		49C4FE191AB863AE00E54A0E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		49C4FE1A1AB863AE00E54A0E /* LoginWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindow.xib; sourceTree = SOURCE_ROOT; };
+		49C4FE1B1AB863AE00E54A0E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		49CBDAF31AD3B309001200D8 /* PhoneActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneActionBar.h; sourceTree = SOURCE_ROOT; };
+		49CBDAF41AD3B309001200D8 /* PhoneActionBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhoneActionBar.mm; sourceTree = SOURCE_ROOT; };
+		49CBDAF61AD3B5B9001200D8 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = SOURCE_ROOT; };
+		49CBDAF71AD3B998001200D8 /* PhoneActionBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneActionBar.xib; sourceTree = SOURCE_ROOT; };
+		49D5252F1ADEADE900AC0301 /* bigmax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigmax.png; sourceTree = SOURCE_ROOT; };
+		49F25F121AE12FAF005B9961 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		49FDC4831AE0966B00E5CD63 /* cameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraIcon.png; sourceTree = SOURCE_ROOT; };
+		49FDC4841AE0966B00E5CD63 /* CameraSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraSettings.xib; sourceTree = SOURCE_ROOT; };
+		49FDC4851AE0966B00E5CD63 /* CameraSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		49FDC4861AE0966B00E5CD63 /* CameraSettingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraSettingsViewController.mm; sourceTree = SOURCE_ROOT; };
+		7A668F9622EC760C00B2903F /* ShijieRoomIos.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShijieRoomIos.pch; sourceTree = SOURCE_ROOT; };
+		7AB63DB922C8526F007FFBD7 /* XDSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSDropDownMenu.h; sourceTree = SOURCE_ROOT; };
+		7AB63DBA22C8526F007FFBD7 /* XDSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSDropDownMenu.m; sourceTree = SOURCE_ROOT; };
+		7ABAE3D422ED9BDF0027F925 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		8C1800FF1B28829300A663C4 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		8C1801021B2882EA00A663C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8C1801041B28830100A663C4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		B01359CC22E6FF160021864B /* drop_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drop_down.png; sourceTree = SOURCE_ROOT; };
+		B05DDD4D22F048F2005969BC /* LoginWindowIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginWindowIpad.xib; sourceTree = SOURCE_ROOT; };
+		C1CA56CB1AFB55AA00EBC16A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1E4D9EB1AC91F0D001180FD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C1E4D9ED1AC91F7E001180FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C1E4D9F01AC92043001180FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1E4D9F21AC92081001180FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C1E4D9F51AC92100001180FD /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C1E4DA521AC94008001180FD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = SOURCE_ROOT; };
+		C1E4DA531AC94008001180FD /* VideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoViewController.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4947C9771ADE310200DBFBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143D43EA224A30BC002FFD53 /* CoreMotion.framework in Frameworks */,
+				8C1801001B28829300A663C4 /* libz.1.2.5.dylib in Frameworks */,
+				C1CA56CC1AFB55AA00EBC16A /* CoreLocation.framework in Frameworks */,
+				490F50CC1AE255A3001F3FD5 /* CoreTelephony.framework in Frameworks */,
+				4947C9791ADE310200DBFBC6 /* CFNetwork.framework in Frameworks */,
+				4947C97A1ADE310200DBFBC6 /* QuartzCore.framework in Frameworks */,
+				4947C97B1ADE310200DBFBC6 /* UIKit.framework in Frameworks */,
+				4947C97C1ADE310200DBFBC6 /* OpenGLES.framework in Frameworks */,
+				0D46CC1823C5E8D100B8F7E3 /* SJSDK.framework in Frameworks */,
+				4947C97D1ADE310200DBFBC6 /* AVFoundation.framework in Frameworks */,
+				4947C97E1ADE310200DBFBC6 /* AudioToolbox.framework in Frameworks */,
+				4947C97F1ADE310200DBFBC6 /* SystemConfiguration.framework in Frameworks */,
+				4947C9801ADE310200DBFBC6 /* CoreVideo.framework in Frameworks */,
+				4947C9811ADE310200DBFBC6 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495E141B1AC91CDB00D39292 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0D6CD3611B2C08FF005EF9D6 /* util.h */,
+				495E141C1AC91D0300D39292 /* GCDMulticastDelegate.h */,
+				495E141D1AC91D0300D39292 /* GCDMulticastDelegate.mm */,
+				49CBDAF61AD3B5B9001200D8 /* Defines.h */,
+				49AC7DE61AD4C01400E8F1BC /* ScreenInfo.h */,
+				49AC7DE71AD4C01400E8F1BC /* ScreenInfo.mm */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		496607141ACB9D7E0097701C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				493A30A71AB98973002D35F3 /* ConferenceManager.h */,
+				493A30A81AB98973002D35F3 /* RoomManager.mm */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		496607151ACB9D850097701C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AB63DB922C8526F007FFBD7 /* XDSDropDownMenu.h */,
+				7AB63DBA22C8526F007FFBD7 /* XDSDropDownMenu.m */,
+				49FDC4851AE0966B00E5CD63 /* CameraSettingsViewController.h */,
+				49FDC4861AE0966B00E5CD63 /* CameraSettingsViewController.mm */,
+				C1E4DA521AC94008001180FD /* VideoViewController.h */,
+				C1E4DA531AC94008001180FD /* VideoViewController.mm */,
+				49C4FE101AB8622400E54A0E /* LoginViewController.h */,
+				49C4FE111AB8622400E54A0E /* LoginViewController.mm */,
+				4966070D1ACB979C0097701C /* TuningWindowViewController.h */,
+				4966070E1ACB979C0097701C /* TuningWindowViewController.mm */,
+				4976E3AB1AD4DC5B004DB50E /* BaseNavigationViewController.h */,
+				4976E3AC1AD4DC5B004DB50E /* BaseNavigationViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		49BE13C61AB902C000B8AD59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D5CCD9B23C5E2B6009060A8 /* SJSDK.framework */,
+				143D43E9224A30BC002FFD53 /* CoreMotion.framework */,
+				0D993BB31BFC634E006BAADA /* libc++.tbd */,
+				8C1801041B28830100A663C4 /* libz.1.1.3.dylib */,
+				8C1801021B2882EA00A663C4 /* libz.dylib */,
+				8C1800FF1B28829300A663C4 /* libz.1.2.5.dylib */,
+				C1CA56CB1AFB55AA00EBC16A /* CoreLocation.framework */,
+				49F25F121AE12FAF005B9961 /* CoreTelephony.framework */,
+				C1E4D9F51AC92100001180FD /* libc++.dylib */,
+				C1E4D9F21AC92081001180FD /* CFNetwork.framework */,
+				C1E4D9F01AC92043001180FD /* QuartzCore.framework */,
+				C1E4D9ED1AC91F7E001180FD /* UIKit.framework */,
+				C1E4D9EB1AC91F0D001180FD /* OpenGLES.framework */,
+				49C099BF1ABBC5C100E7B932 /* libstdc++.6.dylib */,
+				49C099BC1ABBC5B100E7B932 /* libstdc++.dylib */,
+				49BE13E81AB9064D00B8AD59 /* AVFoundation.framework */,
+				49BE13E61AB9063E00B8AD59 /* AudioToolbox.framework */,
+				49BE13E41AB9062F00B8AD59 /* SystemConfiguration.framework */,
+				49BE13E21AB9062100B8AD59 /* CoreVideo.framework */,
+				49BE13E01AB9061800B8AD59 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49C4FDD31AB85F7C00E54A0E = {
+			isa = PBXGroup;
+			children = (
+				49BE13C61AB902C000B8AD59 /* Frameworks */,
+				49C4FDDE1AB85F7C00E54A0E /* ShijieRoomIos */,
+				49C4FDDD1AB85F7C00E54A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49C4FDDD1AB85F7C00E54A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4947C9931ADE310200DBFBC6 /* ShijieRoomIos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C4FDDE1AB85F7C00E54A0E /* ShijieRoomIos */ = {
+			isa = PBXGroup;
+			children = (
+				49CBDAF11AD3B1B2001200D8 /* View */,
+				496607151ACB9D850097701C /* ViewController */,
+				496607141ACB9D7E0097701C /* Model */,
+				49C4FE141AB8623700E54A0E /* Resource */,
+				49C4FE0E1AB8622400E54A0E /* AppDelegate.h */,
+				49C4FE0F1AB8622400E54A0E /* AppDelegate.mm */,
+				495E141B1AC91CDB00D39292 /* Utility */,
+				49C4FDDF1AB85F7C00E54A0E /* Supporting Files */,
+			);
+			path = ShijieRoomIos;
+			sourceTree = "<group>";
+		};
+		49C4FDDF1AB85F7C00E54A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ABAE3D422ED9BDF0027F925 /* Info.plist */,
+				7A668F9622EC760C00B2903F /* ShijieRoomIos.pch */,
+				49C4FE151AB8626700E54A0E /* main.mm */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49C4FE071AB8605700E54A0E /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				49C4FE081AB8605700E54A0E /* InfoPlist.strings */,
+				49C4FE0A1AB8605700E54A0E /* MainMenu.nib */,
+			);
+			path = English.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		49C4FE141AB8623700E54A0E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				49FDC4841AE0966B00E5CD63 /* CameraSettings.xib */,
+				14041764224DF88400085A78 /* VideoView.xib */,
+				49FDC4831AE0966B00E5CD63 /* cameraIcon.png */,
+				49D5252F1ADEADE900AC0301 /* bigmax.png */,
+				B01359CC22E6FF160021864B /* drop_down.png */,
+				4935BDB71AB993ED0070CF3F /* Images.xcassets */,
+				49C4FE191AB863AE00E54A0E /* Default-568h@2x.png */,
+				49C4FE1A1AB863AE00E54A0E /* LoginWindow.xib */,
+				49C4FE1B1AB863AE00E54A0E /* MainWindow.xib */,
+				4966070A1ACB939E0097701C /* TuningWindow.xib */,
+				49CBDAF71AD3B998001200D8 /* PhoneActionBar.xib */,
+				49C4FE071AB8605700E54A0E /* English.lproj */,
+				B05DDD4D22F048F2005969BC /* LoginWindowIpad.xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		49CBDAF11AD3B1B2001200D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49CBDAF31AD3B309001200D8 /* PhoneActionBar.h */,
+				49CBDAF41AD3B309001200D8 /* PhoneActionBar.mm */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4947C9691ADE310200DBFBC6 /* ShijieRoomIos release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4947C9901ADE310200DBFBC6 /* Build configuration list for PBXNativeTarget "ShijieRoomIos release" */;
+			buildPhases = (
+				4947C96A1ADE310200DBFBC6 /* Sources */,
+				4947C9771ADE310200DBFBC6 /* Frameworks */,
+				4947C9831ADE310200DBFBC6 /* Resources */,
+				0D46CC1A23C5E8D100B8F7E3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShijieRoomIos release";
+			productName = ShijeRoomIos;
+			productReference = 4947C9931ADE310200DBFBC6 /* ShijieRoomIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49C4FDD41AB85F7C00E54A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Shisu.Inc;
+				TargetAttributes = {
+					4947C9691ADE310200DBFBC6 = {
+						DevelopmentTeam = T6Q28C572X;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 49C4FDD71AB85F7C00E54A0E /* Build configuration list for PBXProject "ShijieRoomIos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				English,
+			);
+			mainGroup = 49C4FDD31AB85F7C00E54A0E;
+			productRefGroup = 49C4FDDD1AB85F7C00E54A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4947C9691ADE310200DBFBC6 /* ShijieRoomIos release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4947C9831ADE310200DBFBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4936E7E41AE0EC300030088A /* CameraSettings.xib in Resources */,
+				B01359CF22E6FF160021864B /* drop_down.png in Resources */,
+				4936E7E21AE0EC250030088A /* cameraIcon.png in Resources */,
+				4947C9841ADE310200DBFBC6 /* PhoneActionBar.xib in Resources */,
+				4947C9851ADE310200DBFBC6 /* LoginWindow.xib in Resources */,
+				B05DDD4E22F048F2005969BC /* LoginWindowIpad.xib in Resources */,
+				4947C9861ADE310200DBFBC6 /* Images.xcassets in Resources */,
+				4947C9871ADE310200DBFBC6 /* MainMenu.nib in Resources */,
+				4947C98A1ADE310200DBFBC6 /* TuningWindow.xib in Resources */,
+				4947C98B1ADE310200DBFBC6 /* MainWindow.xib in Resources */,
+				4947C98C1ADE310200DBFBC6 /* InfoPlist.strings in Resources */,
+				4947C98F1ADE310200DBFBC6 /* Default-568h@2x.png in Resources */,
+				14041765224DF88500085A78 /* VideoView.xib in Resources */,
+				49D525301ADEADE900AC0301 /* bigmax.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4947C96A1ADE310200DBFBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FDC48B1AE0A6FA00E5CD63 /* CameraSettingsViewController.mm in Sources */,
+				4947C96B1ADE310200DBFBC6 /* LoginViewController.mm in Sources */,
+				4947C96C1ADE310200DBFBC6 /* main.mm in Sources */,
+				4947C96D1ADE310200DBFBC6 /* RoomManager.mm in Sources */,
+				4947C96F1ADE310200DBFBC6 /* PhoneActionBar.mm in Sources */,
+				4947C9701ADE310200DBFBC6 /* TuningWindowViewController.mm in Sources */,
+				4947C9711ADE310200DBFBC6 /* AppDelegate.mm in Sources */,
+				4947C9721ADE310200DBFBC6 /* BaseNavigationViewController.m in Sources */,
+				4947C9731ADE310200DBFBC6 /* ScreenInfo.mm in Sources */,
+				7AB63DBB22C8526F007FFBD7 /* XDSDropDownMenu.m in Sources */,
+				4947C9741ADE310200DBFBC6 /* GCDMulticastDelegate.mm in Sources */,
+				4947C9751ADE310200DBFBC6 /* VideoViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49C4FE081AB8605700E54A0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C4FE091AB8605700E54A0E /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		49C4FE0A1AB8605700E54A0E /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C4FE0B1AB8605700E54A0E /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4947C9911ADE310200DBFBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = T6Q28C572X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PREFIX_HEADER = ShijieRoomIos.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					POSIX,
+					IOS,
+					DEBUG,
+					ENABLED_FEATURES_VIDEO,
+					ENABLED_FEATURES_AUDIO,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/mi/source_code/ios-obj/pack/conference_only/SJSDK.framework/Headers",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					library,
+					"/Users/mi/source_code/ios-obj/pack/conference_only/",
+				);
+				MARKETING_VERSION = 3.1.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.voip.Demo;
+				PRODUCT_NAME = ShijieRoomIos;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4947C9921ADE310200DBFBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = T6Q28C572X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = ShijieRoomIos.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					POSIX,
+					IOS,
+					DEBUG,
+					ENABLED_FEATURES_VIDEO,
+					ENABLED_FEATURES_AUDIO,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/mi/source_code/ios-obj/pack/conference_only/SJSDK.framework/Headers",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					library,
+					"/Users/mi/source_code/ios-obj/pack/conference_only/",
+				);
+				MARKETING_VERSION = 3.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.voip.Demo;
+				PRODUCT_NAME = ShijieRoomIos;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49C4FDFD1AB85F7D00E54A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"WITHOUT_TLS_PLUGIN=1",
+					"WITHOUT_SRTP_PLUGIN=1",
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		49C4FDFE1AB85F7D00E54A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"WITHOUT_TLS_PLUGIN=1",
+					"WITHOUT_SRTP_PLUGIN=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4947C9901ADE310200DBFBC6 /* Build configuration list for PBXNativeTarget "ShijieRoomIos release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4947C9911ADE310200DBFBC6 /* Debug */,
+				4947C9921ADE310200DBFBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C4FDD71AB85F7C00E54A0E /* Build configuration list for PBXProject "ShijieRoomIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C4FDFD1AB85F7D00E54A0E /* Debug */,
+				49C4FDFE1AB85F7D00E54A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49C4FDD41AB85F7C00E54A0E /* Project object */;
+}

@@ -1,0 +1,15 @@
+frameworkname=SJSDK
+rm -r -f ${OBJ}/release
+mkdir ${OBJ}/release
+
+mkdir ${OBJ}/dist
+mkdir ${OBJ}/extra
+
+cp -R  ${OBJ}/../../conference_only/$frameworkname.framework ${SRC}/
+cp -R ${SRC}  ${OBJ}/dist
+
+rm -r -f ${OBJ}/dist/ShijieRoomIos/ShijieRoomIos.xcodeproj/project.xcworkspace
+rm -r -f ${OBJ}/dist/ShijieRoomIos/ShijieRoomIos.xcodeproj/xcuserdata
+
+python ${ROOT}/build_system/ditto.py ${OBJ}/dist/  ${OBJ}/extra/
+python ${SRC}/../../generate-release-zip.py  -b ${OBJ}/dist -e ${OBJ}/extra -p ShiJieIosDemoCode --project ${PROJECT}
